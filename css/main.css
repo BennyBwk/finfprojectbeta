@@ -1,0 +1,142 @@
+html {
+    text-decoration: none;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+.navWrapper {
+    height: 112px;
+}
+
+.jumbotron {
+  background: url('../images/HeaderBG.png');
+  background-position: calc(100%) calc(100% + 40px); 
+    height:100vh;
+  background-position: center top;
+  background-size: cover;
+}
+
+@media screen and (max-width: 985px) {
+  .jumbotron {
+      background-position: center;
+    }
+}
+
+@media screen and (max-height: 620px) {
+  .jumbotron {
+      height: 620px;
+    }
+}
+
+.jumbotron .container {
+  position: relative;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 56px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 24px;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.jumbotron a {
+	color: #ffff00;
+	font-size: 18px;
+}
+
+.welcome {
+    background-image: url('../images/AboutUsBG.png');
+    background-size: cover;
+    padding-top: 40vh;
+    padding-bottom: 40vh;
+    background-color: #a2c3e0;
+    vertical-align: middle;
+}
+
+@media screen and (max-height: 692px) {
+  .welcome {
+      padding-top: 60vh;
+        padding-bottom: 60vh;
+    }
+}
+
+.welcome .container {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+}
+
+.welcome h2 {
+    color: white;
+    font-size: 48px;
+	font-weight: bold;
+    margin-bottom: 3vh;
+}
+
+.welcome p {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 1024px) {
+  .welcome p {
+      font-size: 20px;
+    }
+}
+
+.productDiv {
+	background-color: #edefec;
+}
+
+.productDiv .container {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.productDiv h1 {
+  color: #000;
+  font-size: 48px;  
+  font-weight: bold;
+    text-align: center;
+}
+
+.productDiv h2 {
+  font-size: 24px;
+  color: #000;
+  margin-bottom: 0px;
+    text-align: center;
+    padding: 12px;
+}
+
+.contactDiv .container {
+  position: relative;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.contactDiv h1 {
+  color: #000;
+  font-size: 30px;  
+  font-weight: bold;
+    text-align: center;
+}
+
+.footer {
+	padding-top: 20px;
+	padding-bottom: 10px;
+	font-size: 14px;
+    display: inline-block;
+}
+
+.noshow {
+    display: none;
+}
