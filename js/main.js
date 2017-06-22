@@ -100,3 +100,71 @@ function myFunction() {
         y.className -= " noshow";
     }
 }
+
+function showBeverages() {
+    document.getElementById("beveragesIcon").style.display = "block";
+}
+
+function hideBeverages() {
+    document.getElementById("beveragesIcon").style.display = "none";
+}
+
+function showCannedFood() {
+    document.getElementById("cannedfoodIcon").style.display = "block";
+}
+
+function hideCannedFood() {
+    document.getElementById("cannedfoodIcon").style.display = "none";
+}
+
+function showDesserts() {
+    document.getElementById("dessertsIcon").style.display = "block";
+}
+
+function hideDesserts() {
+    document.getElementById("dessertsIcon").style.display = "none";
+}
+
+function showSnacks() {
+    document.getElementById("snacksIcon").style.display = "block";
+}
+
+function hideSnacks() {
+    document.getElementById("snacksIcon").style.display = "none";
+}
+
+
+
+
+
+function showFruits() {
+    document.getElementById("fruitsIcon").style.display = "block";
+}
+
+function hideFruits() {
+    document.getElementById("fruitsIcon").style.display = "none";
+}
+
+function showSeafood() {
+    document.getElementById("seafoodIcon").style.display = "block";
+}
+
+function hideSeafood() {
+    document.getElementById("seafoodIcon").style.display = "none";
+}
+
+function showCommodities() {
+    document.getElementById("commoditiesIcon").style.display = "block";
+}
+
+function hideCommodities() {
+    document.getElementById("commoditiesIcon").style.display = "none";
+}
+
+function showPromos() {
+    document.getElementById("promotionsIcon").style.display = "block";
+}
+
+function hidePromos() {
+    document.getElementById("promotionsIcon").style.display = "none";
+}

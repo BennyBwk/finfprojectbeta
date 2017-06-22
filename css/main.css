@@ -99,6 +99,16 @@ body {
   padding-bottom: 10vh;
 }
 
+.productDiv table {
+    width:70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.productDiv a {
+    margin-top: 40px;
+}
+
 .productDiv h1 {
   color: #000;
   font-size: 48px;  
@@ -107,13 +117,19 @@ body {
     font-family: 'Raleway', sans-serif !important;
 }
 
-.productDiv h2 {
+.productDiv a {
   font-size: 24px;
   color: #000;
   margin-bottom: 0px;
     text-align: center;
     padding: 12px;
     font-family: 'Raleway', sans-serif !important;
+    display: inline-block;
+    text-decoration: none !important;
+}
+
+.productDiv img {
+    display: inline-block;
 }
 
 .contactDiv .container {
@@ -148,4 +164,12 @@ body {
 
 #homeBtn:focus {
     outline: none;
+}
+
+#beveragesIcon, #cannedfoodIcon, #dessertsIcon, #snacksIcon, #fruitsIcon, #seafoodIcon, #commoditiesIcon, #promotionsIcon {
+    display: none;
+}
+
+.displayblock {
+    display: block;
 }
