@@ -18,20 +18,26 @@ $(document).ready(function () {
 	});
     
     $('#welcomeBtn').click(function () {
-		$('html, body').animate({
-			scrollTop: $('.welcome h2').offset().top - 112
-		}, 'slow');
+        if ($( window ).width() > 768){
+            $('html, body').animate({
+			scrollTop: $('.welcome').offset().top + 30
+		  }, 'slow');
+        } else {
+            $('html, body').animate({
+			scrollTop: $('.welcome h2').offset().top - 115
+		  }, 'slow');
+        }
 	});
     
     $('#productDivBtn').click(function () {
 		$('html, body').animate({
-			scrollTop: $('.productDiv h1').offset().top - 112
+			scrollTop: $('.productDiv h1').offset().top - 115
 		}, 'slow');
 	});
     
     $('#contactDivBtn').click(function () {
 		$('html, body').animate({
-			scrollTop: $('.contactDiv h1').offset().top - 112
+			scrollTop: $('.contactDiv h1').offset().top - 115
 		}, 'slow');
 	});
     
