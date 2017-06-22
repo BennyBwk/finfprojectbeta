@@ -18,7 +18,7 @@ $(document).ready(function () {
 	});
     
     $('#welcomeBtn').click(function () {
-        if ($( window ).width() > 768){
+        if ($( window ).width() > 767){
             $('html, body').animate({
 			scrollTop: $('.welcome').offset().top + 30
 		  }, 'slow');
