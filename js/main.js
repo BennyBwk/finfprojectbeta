@@ -46,11 +46,15 @@ $(document).ready(function () {
     });
     
     $(window).on("scroll", function() {
-    if($(window).scrollTop() > $(window).height()) {
+        if($("#myTopnav").hasClass("responsive")){
+            $(".navWrapper").removeClass("headeractive");
+            $(".navWrapper").removeClass("headeractive20");
+            $(".navWrapper").removeClass("headeractive30");
+        } else if($(window).scrollTop() > $(window).height()) {
             $(".navWrapper").addClass("headeractive");
-        $(".navWrapper").removeClass("headeractive20");
-        $(".navWrapper").removeClass("headeractive30");
-        } else if ($(window).scrollTop() > ($(window).height() * 0.5)) {
+            $(".navWrapper").removeClass("headeractive20");
+            $(".navWrapper").removeClass("headeractive30");
+        } else if ($(window).scrollTop() > ($(window).height() * 0.8)) {
             $(".navWrapper").removeClass("headeractive");
             $(".navWrapper").addClass("headeractive20");
             $(".navWrapper").removeClass("headeractive30");
@@ -66,10 +70,22 @@ $(document).ready(function () {
     });
     
     $('.icon').click(function() {
-        if($(".navWrapper").hasClass("headeractive")){
+        if($("#myTopnav").hasClass("responsive")){
             $(".navWrapper").removeClass("headeractive");
-        } else if ($(window).scrollTop() > $(window).height()) {
+            $(".navWrapper").removeClass("headeractive20");
+            $(".navWrapper").removeClass("headeractive30");
+        } else if($(window).scrollTop() > $(window).height()) {
             $(".navWrapper").addClass("headeractive");
+            $(".navWrapper").removeClass("headeractive20");
+            $(".navWrapper").removeClass("headeractive30");
+        } else if ($(window).scrollTop() > ($(window).height() * 0.8)) {
+            $(".navWrapper").removeClass("headeractive");
+            $(".navWrapper").addClass("headeractive20");
+            $(".navWrapper").removeClass("headeractive30");
+        } else if ($(window).scrollTop() > ($(window).height() * 0.5)) {
+            $(".navWrapper").removeClass("headeractive");
+            $(".navWrapper").removeClass("headeractive20");
+            $(".navWrapper").addClass("headeractive30");
         }
     });
 });

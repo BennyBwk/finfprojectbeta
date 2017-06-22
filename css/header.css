@@ -69,13 +69,17 @@
     display: block;
       color: #9bce72;
       text-decoration: none;
-      font-size: 6vh;
+      font-size: 5vh;
       text-align: center;
   }
     .topnav.responsive {
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.8);
         height: 100vh;
         z-index: 1000 !important;
         vertical-align: middle;
+    }
+    
+    #contactDivBtn {
+        margin-top: 5vh;
     }
 }
