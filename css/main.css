@@ -95,14 +95,14 @@ body {
 
 .productDiv .container {
   position: relative;
-  padding-top: 45px;
-  padding-bottom: 45px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .productDiv h1 {
   color: #000;
   font-size: 48px;  
-  font-weight: bold;
+  font-weight: normal;
     text-align: center;
     font-family: 'Raleway', sans-serif !important;
 }

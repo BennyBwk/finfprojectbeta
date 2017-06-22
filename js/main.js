@@ -1,6 +1,5 @@
 $(document).ready(function () {
 	var offset = 0
-    var offsetabout = 130;
 	
 	$('#ParentContainer').scroll(function() { 
 		$('#draggable3').css('top', $(this).scrollTop());
@@ -20,19 +19,19 @@ $(document).ready(function () {
     
     $('#welcomeBtn').click(function () {
 		$('html, body').animate({
-			scrollTop: $('.welcome').offset().top + offsetabout
+			scrollTop: $('.welcome h2').offset().top - 112
 		}, 'slow');
 	});
     
     $('#productDivBtn').click(function () {
 		$('html, body').animate({
-			scrollTop: $('.productDiv').offset().top
+			scrollTop: $('.productDiv h1').offset().top - 112
 		}, 'slow');
 	});
     
     $('#contactDivBtn').click(function () {
 		$('html, body').animate({
-			scrollTop: $('.contactDiv').offset().top 
+			scrollTop: $('.contactDiv h1').offset().top - 112
 		}, 'slow');
 	});
     
