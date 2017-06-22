@@ -7,7 +7,15 @@
 }
 
 .headeractive {
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.headeractive20 {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.headeractive30 {
+    background-color: rgba(0, 0, 0, 0.08);
 }
 
 .topnav {
@@ -15,8 +23,8 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 900;
     background-size: auto;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 3px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -26,17 +34,18 @@
   display: block;
   color: black;
   padding: 14px 4%;
-  text-decoration: none;
+  text-decoration: none !important;
   font-size: 28px;
 }
 
 .topnav a:hover {
   color: #9bce72;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
 .topnav .icon {
   display: none;
+    text-decoration: none !important;
 }
 
 @media screen and (max-width: 1024px) {
