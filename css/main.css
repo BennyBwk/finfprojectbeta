@@ -139,3 +139,13 @@ body {
 .noshow {
     display: none;
 }
+
+.ui-widget-content {
+    background: none !important;
+    border: none !important;
+    text-decoration: none !important;
+}
+
+#homeBtn:focus {
+    outline: none;
+}
