@@ -1,6 +1,6 @@
 $(document).ready(function () {
 	var offset = 0
-    var offsetabout = 300;
+    var offsetabout = 130;
 	
 	$('#ParentContainer').scroll(function() { 
 		$('#draggable3').css('top', $(this).scrollTop());
