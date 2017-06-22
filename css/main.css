@@ -175,3 +175,7 @@ body {
 .displayblock {
     display: block;
 }
+
+.productDiv a:hover {
+    color: #9bce72;
+}
