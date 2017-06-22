@@ -1,9 +1,10 @@
 html {
     text-decoration: none;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 body {
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway', sans-serif !important;
 }
 
 .navWrapper {
@@ -78,18 +79,14 @@ body {
 .welcome h2 {
     color: white;
     font-size: 48px;
-	font-weight: bold;
+	font-weight: normal;
     margin-bottom: 3vh;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 .welcome p {
-    font-size: 28px;
-}
-
-@media screen and (max-width: 1024px) {
-  .welcome p {
-      font-size: 20px;
-    }
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 .productDiv {

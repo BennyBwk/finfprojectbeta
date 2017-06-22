@@ -44,6 +44,14 @@ $(document).ready(function () {
             y.className -= " noshow";
         }
     });
+    
+    $(window).on("scroll", function() {
+    if($(window).scrollTop() > $(window).height()) {
+        $(".topnav").addClass("headeractive");
+    } else {
+       $(".topnav").removeClass("headeractive");
+    }
+});
 });
 
 function myFunction() {

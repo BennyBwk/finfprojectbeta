@@ -6,6 +6,10 @@
     z-index: 300 !important;
 }
 
+.headeractive {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
 .topnav {
     overflow: hidden;
     font-family: 'Raleway', sans-serif;
