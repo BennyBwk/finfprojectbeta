@@ -130,6 +130,8 @@ body {
 
 .productDiv img {
     display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contactDiv .container {
