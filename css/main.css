@@ -110,7 +110,7 @@ body {
 
 .productDiv h1 {
   color: #000;
-  font-size: 36px;  
+  font-size: 42px;  
   font-weight: normal;
     text-align: center;
     font-family: 'Raleway', sans-serif !important;
@@ -141,7 +141,7 @@ body {
 
 .contactDiv h1 {
   color: #000;
-  font-size: 36px;  
+  font-size: 42px;  
   font-weight: normal;
     text-align: center;
     font-family: 'Raleway', sans-serif !important;
@@ -181,5 +181,7 @@ body {
 }
 
 .productDiv a:hover {
+    cursor: pointer;
     color: #9bce72;
+    border-bottom: 2px solid #9bce72;
 }

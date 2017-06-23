@@ -1,12 +1,8 @@
 $(document).ready(function () {
     $("#navLogo").hide();
     
-    /*
-    $("#jumbotron").fadeOut(function() {
-        $("#jumbotron").css({background : url('images/bg1.jpg') });
-        $("#jumbotron").fadeIn(300);
-      }, 300);
-    */
+    $('#jumbotron').css({opacity : 0});
+    $('#jumbotron').animate({'opacity': 1}, 2800);
     
 	var offset = 0
 	
@@ -59,6 +55,9 @@ $(document).ready(function () {
         }
     });
     
+    $('#welcome h2').css({opacity : 0});
+    $('#welcome p').css({opacity : 0});
+    
     $(window).on("scroll", function() {
         if ($("#myTopnav").hasClass("responsive")) {
             $(".navWrapper").removeClass("headeractive");
@@ -75,6 +74,8 @@ $(document).ready(function () {
             $(".navWrapper").addClass("headeractive20");
             $(".navWrapper").removeClass("headeractive30");
             $("#navLogo").hide();
+            $('#welcome h2').animate({ opacity: 1 }, { duration: 1200 });
+            $('#welcome p').animate({ opacity: 1 }, { duration: 1200 });
         } else if ($(window).scrollTop() > ($(window).height() * 0.5)) {
             $(".navWrapper").removeClass("headeractive");
             $(".navWrapper").removeClass("headeractive20");
