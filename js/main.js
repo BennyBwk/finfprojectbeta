@@ -1,10 +1,12 @@
 $(document).ready(function () {
     $("#navLogo").hide();
     
+    /*
     $("#jumbotron").fadeOut(function() {
         $("#jumbotron").css({background : url('images/bg1.jpg') });
         $("#jumbotron").fadeIn(300);
       }, 300);
+    */
     
 	var offset = 0
 	
