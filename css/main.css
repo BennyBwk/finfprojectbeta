@@ -12,7 +12,7 @@ body {
 }
 
 .jumbotron {
-  background: url('../images/HeaderBG.png');
+  background: url('../images/HeaderBGc.png');
   background-position: calc(100%) calc(100% + 40px); 
     height:100vh;
   background-position: center top;
@@ -32,7 +32,7 @@ body {
 }
 
 .welcome {
-    background-image: url('../images/AboutUsBG.png');
+    background-image: url('../images/AboutUsBGc.png');
     background-size: cover;
     padding-top: 40vh;
     padding-bottom: 40vh;
