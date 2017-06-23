@@ -31,28 +31,6 @@ body {
     }
 }
 
-.jumbotron .container {
-  position: relative;
-}
-
-.jumbotron h1 {
-  color: #fff;
-  font-size: 56px;  
-  font-family: 'Shift', sans-serif;
-  font-weight: bold;
-}
-
-.jumbotron p {
-  font-size: 24px;
-  color: #fff;
-  margin-bottom: 0px;
-}
-
-.jumbotron a {
-	color: #ffff00;
-	font-size: 18px;
-}
-
 .welcome {
     background-image: url('../images/AboutUsBG.png');
     background-size: cover;
@@ -62,6 +40,13 @@ body {
     vertical-align: middle;
 }
 
+.welcome .container {
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+
 @media screen and (max-height: 692px) {
   .welcome {
       padding-top: 60vh;
@@ -69,28 +54,28 @@ body {
     }
 }
 
-.welcome .container {
-    position: relative;
-    margin: 0 auto;
-    text-align: center;
-    width: 90%;
+@media screen and (max-width: 768px) {
+    .welcome .container {
+        width: 90%;
+    }
 }
 
 .welcome h2 {
     color: white;
-    font-size: 48px;
+    font-size: 36px;
 	font-weight: normal;
     margin-bottom: 3vh;
     font-family: 'Raleway', sans-serif !important;
 }
 
 .welcome p {
-    font-size: 20px;
+    font-size: 18px;
     font-family: 'Raleway', sans-serif !important;
 }
 
 .productDiv {
-	background-color: #edefec;
+    /*background-image: url('../images/ProductBG.jpg');
+    background-size: cover;*/
 }
 
 .productDiv .container {
@@ -125,14 +110,14 @@ body {
 
 .productDiv h1 {
   color: #000;
-  font-size: 48px;  
+  font-size: 36px;  
   font-weight: normal;
     text-align: center;
     font-family: 'Raleway', sans-serif !important;
 }
 
 .productDiv a {
-  font-size: 24px;
+  font-size: 3vh;
   color: #000;
   margin-bottom: 0px;
     text-align: center;
@@ -156,7 +141,7 @@ body {
 
 .contactDiv h1 {
   color: #000;
-  font-size: 48px;  
+  font-size: 36px;  
   font-weight: normal;
     text-align: center;
     font-family: 'Raleway', sans-serif !important;
@@ -189,6 +174,10 @@ body {
 
 .displayblock {
     display: block;
+}
+
+.displaynone {
+    display: none;
 }
 
 .productDiv a:hover {
