@@ -105,6 +105,20 @@ body {
     text-align: center;
 }
 
+.thwidth {
+    width: 20%;
+}
+
+@media screen and (max-width: 420px) {
+  .productDiv table {
+      width: 100%;
+    }
+    
+    .thwidth {
+    width: 30%;
+}
+}
+
 .productDiv a {
     margin-top: 40px;
 }
