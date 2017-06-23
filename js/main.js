@@ -4,6 +4,9 @@ $(document).ready(function () {
     $('#jumbotron').css({opacity : 0});
     $('#jumbotron').animate({'opacity': 1}, 2800);
     
+    $(".productDiv .leftDiv").css({'height':($(".productDiv .container").height()+'px')});
+    $(".productDiv .rightDiv").css({'height':($(".productDiv .container").height()+'px')});
+    
 	var offset = 0
 	
 	$('#ParentContainer').scroll(function() { 
