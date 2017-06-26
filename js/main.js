@@ -1,4 +1,6 @@
 $(document).ready(function () {
+    $(window).scrollTop(0);
+    
     $("#navLogo").hide();
     
     $('#jumbotron').css({opacity : 0});

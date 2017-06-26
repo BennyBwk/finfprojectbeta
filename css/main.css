@@ -85,7 +85,7 @@ body {
 }
 
 .productDiv table {
-    width:70%;
+    width: 50%;
     margin: 0 auto;
     text-align: center;
 }
@@ -117,9 +117,9 @@ body {
 }
 
 .productDiv h1 {
-  color: #000;
-  font-size: 42px;  
-  font-weight: normal;
+    color: #000;
+    font-size: 42px;  
+    font-weight: normal;
     text-align: center;
     font-family: 'Raleway', sans-serif !important;
 }
@@ -189,7 +189,52 @@ body {
 }
 
 .productDiv a:hover {
-        cursor: pointer;
+    cursor: pointer;
     color: #9bce72;
     border-bottom: 2px solid #9bce72;
+}
+
+.contactLeftDiv {
+    text-align: right;
+    float: left;
+    width: 50%;
+}
+
+.contactRightDiv {
+    text-align: left;
+    float: right;
+    width: 50%;
+}
+
+@media screen and (max-width: 1366px) {
+    .gmapdivs {
+        height: 25vw;
+        width: 25vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gmapdivs {
+        height: 300px;
+        width: 300px;
+    }
+}
+
+.gmapdivs {
+    height: 25vw;
+    width: 25vw;
+}
+
+#gmap_canvas img {
+    max-width: none !important;
+    background: none !important;
+}
+
+.addressDiv {
+    width: 60%;
+    border-bottom: solid 2px #000;
+    border-top: solid 2px #000;
+    border-right: solid 2px #000;
+    padding-top: 8px;
+    padding-bottom: 8px;
 }
