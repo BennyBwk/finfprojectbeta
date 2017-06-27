@@ -141,6 +141,12 @@ body {
     margin-right: auto;
 }
 
+.contactDiv {
+    background-image: url('../images/annie-spratt-124160.jpg');
+    background-size: cover;
+    vertical-align: middle;
+}
+
 .contactDiv .container {
   position: relative;
   padding-top: 45px;
@@ -206,30 +212,6 @@ body {
     width: 50%;
 }
 
-@media screen and (max-width: 1366px) {
-    .gmapdivs {
-        height: 25vw;
-        width: 25vw;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .gmapdivs {
-        height: 300px;
-        width: 300px;
-    }
-}
-
-.gmapdivs {
-    height: 25vw;
-    width: 25vw;
-}
-
-#gmap_canvas img {
-    max-width: none !important;
-    background: none !important;
-}
-
 .addressDiv {
     width: 60%;
     border-bottom: solid 2px #000;
@@ -237,4 +219,62 @@ body {
     border-right: solid 2px #000;
     padding-top: 8px;
     padding-bottom: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .contactLeftDiv {
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+    
+    .contactRightDiv {
+        text-align: center;
+        float: none;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .addressDiv {
+        border-right: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    
+    .addressDiv span {
+        display: none;
+    }
+}
+
+.gmapdivs {
+    height: 30vw;
+    width: 30vw;
+}
+
+@media screen and (max-width: 1366px) {
+    .gmapdivs {
+        height: 300px;
+        width: 300px;
+    }
+    
+    .addressDiv {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .gmapdivs {
+        height: 300px;
+        width: 300px;
+        margin-right: auto;
+    }
+}
+
+#gmap_canvas img {
+    max-width: none !important;
+    background: none !important;
 }
