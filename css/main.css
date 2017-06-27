@@ -141,12 +141,6 @@ body {
     margin-right: auto;
 }
 
-.contactDiv {
-    background-image: url('../images/annie-spratt-124160.jpg');
-    background-size: cover;
-    vertical-align: middle;
-}
-
 .contactDiv .container {
   position: relative;
   padding-top: 45px;
