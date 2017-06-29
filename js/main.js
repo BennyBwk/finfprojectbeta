@@ -7,7 +7,7 @@ $(document).ready(function () {
         if ($(window).width() > 1250) {
             $(".contactFormDiv").css({'zoom': $(window).width()*0.0008});
         } else {
-            $(".contactFormDiv").css({'zoom': 1 !important});
+            $(".contactFormDiv").css({'zoom': 1 });
         }
     });
     
