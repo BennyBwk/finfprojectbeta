@@ -1,10 +1,22 @@
 <?php
-$to      = 'bennybwkrap@gmail.com';
-$subject = 'the subject';
-$message = 'hello';
-$headers = 'From: webmaster@example.com' . "\r\n" .
-    'Reply-To: webmaster@example.com' . "\r\n" .
-    'X-Mailer: PHP/' . phpversion();
+$mail = new PHPMailer(); // create a new object
+$mail->IsSMTP(); // enable SMTP
+$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
+$mail->SMTPAuth = true; // authentication enabled
+$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
+$mail->Host = "smtp.gmail.com";
+$mail->Port = 465; // or 587
+$mail->IsHTML(true);
+$mail->Username = "bennybwkrap@gmail.com";
+$mail->Password = "170496Bbwk";
+$mail->SetFrom("bennybwkrap@gmail.com");
+$mail->Subject = "Test";
+$mail->Body = "hello";
+$mail->AddAddress("bennybwkrap@gmail.com");
 
-mail($to, $subject, $message, $headers);
+ if(!$mail->Send()) {
+    echo "Mailer Error: " . $mail->ErrorInfo;
+ } else {
+    echo "Message has been sent";
+ }
 ?>
