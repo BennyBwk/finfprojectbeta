@@ -1,9 +1,6 @@
 <?php
-ini_set("SMTP","ssl://smtp.gmail.com");
-ini_set("smtp_port","465");
-ini_set("smtp_auth","true");
-ini_set("smtp_debug","1");
-ini_set("smtp_secure","ssl");
+ini_set("SMTP","localhost");
+ini_set("smtp_port","25");
 
 $to = "bennybwkrap@gmail.com";
 $subject = "Hi!";
