@@ -1,5 +1,5 @@
 <?php
-if($_POST["SUBMIT"]) {
+if($_POST["submit"]) {
     $recipient="bennybwkrap@gmail.com"; //Enter your mail address
     $subject="Contact from Website"; //Subject 
     $sender=$_POST["nameTB"];
