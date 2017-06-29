@@ -219,6 +219,10 @@ body {
     width: 30vw;
 }
 
+.ifonlyexists {
+    display: none;
+}
+
 @media screen and (max-width: 991px) {
     .contactLeftDiv {
         text-align: center;
@@ -273,6 +277,10 @@ body {
     }
     
     .footer2 {
+        display: block;
+    }
+    
+    .ifonlyexists {
         display: block;
     }
 }
@@ -333,12 +341,12 @@ tr textarea {
     border: none;
     background-color: #d5d4d4;
     border-radius: 50px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 900;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 3px;
+    padding-bottom: 3px;
 }
 
 @media screen and (max-width: 991px) {
