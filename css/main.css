@@ -211,12 +211,12 @@ body {
 }
 
 .addressDiv {
-    width: 60%;
     border-bottom: solid 2px #000;
     border-top: solid 2px #000;
     border-right: solid 2px #000;
     padding-top: 8px;
     padding-bottom: 8px;
+    width: 30vw;
 }
 
 @media screen and (max-width: 991px) {
@@ -242,7 +242,6 @@ body {
         text-align: left;
         padding-left: 8%;
         padding-right: 8%;
-        width: 100%;
     }
     
     .addressDiv span {
@@ -282,17 +281,6 @@ body {
     height: 30vw;
     width: 30vw;
     z-index: 1;
-}
-
-.addressDiv {
-    width: 30vw;
-}
-
-@media screen and (min-width: 991px) {
-    .addressDiv {
-        position: absolute;
-        bottom: 60px;
-    }
 }
 
 .contactRightDiv {
