@@ -4,17 +4,7 @@ if(isset($_POST['submit'])) {
     // EDIT THE 2 LINES BELOW AS REQUIRED
     $email_to = "bennybwkrap@gmail.com";
     $email_subject = "Your email subject line";
- 
-    function died($error) {
-        // your error code can go here
-        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
-        echo "These errors appear below.<br /><br />";
-        echo $error."<br /><br />";
-        echo "Please go back and fix these errors.<br /><br />";
-        die();
-    }
- 
- 
+
     $error_message = "";
  
     $email_message = "Form details below.\n\n";
@@ -26,7 +16,7 @@ if(isset($_POST['submit'])) {
  
      
  
-    $email_message .= "First Line\nSecond Line\nThird Line";
+    $email_message = "First Line\nSecond Line\nThird Line";
  
 // create email headers
 $headers = 'From: '.$email_to."\r\n".
