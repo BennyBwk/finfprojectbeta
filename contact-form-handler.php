@@ -1,6 +1,6 @@
 <?php
-ini_set("SMTP","smtp.gmail.com");
-ini_set("port","465");
+ini_set("SMTP","localhost");
+ini_set("port","25");
 
 $to = "bennybwkrap@gmail.com";
 $subject = "Hi!";
