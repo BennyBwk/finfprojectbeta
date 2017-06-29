@@ -156,10 +156,14 @@ body {
 }
 
 .footer {
-	padding-top: 20px;
-	padding-bottom: 10px;
+	bottom: 20px;
+    margin-left: 15px;
 	font-size: 14px;
-    display: inline-block;
+    display: block;
+}
+
+.footer2 {
+    display: none;
 }
 
 .noshow {
@@ -177,7 +181,7 @@ body {
 }
 
 #beveragesIcon, #cannedfoodIcon, #dessertsIcon, #snacksIcon, #fruitsIcon, #seafoodIcon, #commoditiesIcon, #promotionsIcon {
-    display: none;
+    opacity: 0;
 }
 
 .displayblock {
@@ -215,11 +219,12 @@ body {
     padding-bottom: 8px;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
     .contactLeftDiv {
         text-align: center;
         float: none;
         width: 100%;
+        margin-bottom: 20px;
     }
     
     .contactRightDiv {
@@ -237,30 +242,118 @@ body {
         text-align: left;
         padding-left: 8%;
         padding-right: 8%;
+        width: 100%;
     }
     
     .addressDiv span {
         display: none;
+    }
+    
+    .contactFormDiv {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        padding-left: 8%;
+        padding-right: 8%;
+    }
+    
+    .contactFormDiv table {
+        margin:auto;
+    }
+    
+    tr input[type="text"] {
+        width: 150px;
+    }
+
+    tr textarea {
+        width: 150px;
+    }
+    
+    .footer {
+        display: none;
+    }
+    
+    .footer2 {
+        display: block;
     }
 }
 
 .gmapdivs {
     height: 30vw;
     width: 30vw;
+    z-index: 1;
+}
+
+.addressDiv {
+    width: 30vw;
+}
+
+@media screen and (min-width: 991px) {
+    .addressDiv {
+        position: absolute;
+        bottom: 60px;
+    }
+}
+
+.contactRightDiv {
+    display: block;
+    height: 30vw;
 }
 
 @media screen and (max-width: 1366px) {
     .gmapdivs {
-        height: 300px;
-        width: 300px;
+        height: 410px;
+        width: 410px;
     }
     
     .addressDiv {
-        width: 330px;
+        width: 410px;
     }
 }
 
-@media screen and (max-width: 768px) {
+.contactFormDiv {
+    margin-left: 15px;
+}
+
+.contactFromTable input[type="text"] {
+    background-color: #d5d4d4;
+    border: none;
+}
+
+.contactFromTable textarea {
+    background-color: #d5d4d4;
+    border: none;
+}
+
+tr {
+    height: 40px;
+}
+
+tr input[type="text"] {
+    width: 200px;
+    margin-left: 10px;
+}
+
+tr textarea {
+    width: 200px;
+    margin-left: 10px;
+}
+
+.submitBtn {
+    float:right;
+    display: inherit;
+    border: none;
+    background-color: #d5d4d4;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 900;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+@media screen and (max-width: 991px) {
     .gmapdivs {
         height: 300px;
         width: 300px;

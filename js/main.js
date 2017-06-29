@@ -1,6 +1,14 @@
 $(document).ready(function () {
     $(window).scrollTop(0);
     
+    $(".contactFormDiv").css({'zoom': $(window).width()*0.0008});
+    
+    $( window ).resize(function() {
+        if ($(window).width() > 1250) {
+            $(".contactFormDiv").css({'zoom': $(window).width()*0.0008});
+        }
+    });
+    
     $("#navLogo").hide();
     
     $('#jumbotron').css({opacity : 0});
@@ -133,65 +141,273 @@ function myFunction() {
 }
 
 function showBeverages() {
-    document.getElementById("beveragesIcon").style.display = "block";
+    var el = document.getElementById("beveragesIcon");
+    fadeIn(el);
 }
 
 function hideBeverages() {
-    document.getElementById("beveragesIcon").style.display = "none";
+    var ela = document.getElementById("beveragesIcon");
+    fadeOut(ela);
 }
 
 function showCannedFood() {
-    document.getElementById("cannedfoodIcon").style.display = "block";
+    var el2 = document.getElementById("cannedfoodIcon");
+    fadeIn2(el2);
 }
 
 function hideCannedFood() {
-    document.getElementById("cannedfoodIcon").style.display = "none";
+    var el2a = document.getElementById("cannedfoodIcon");
+    fadeOut2(el2a);
 }
 
 function showDesserts() {
-    document.getElementById("dessertsIcon").style.display = "block";
+    var el3 = document.getElementById("dessertsIcon");
+    fadeIn3(el3);
 }
 
 function hideDesserts() {
-    document.getElementById("dessertsIcon").style.display = "none";
+    var el3a = document.getElementById("dessertsIcon");
+    fadeOut3(el3a);
 }
 
 function showSnacks() {
-    document.getElementById("snacksIcon").style.display = "block";
+    var el4 = document.getElementById("snacksIcon");
+    fadeIn4(el4);
 }
 
 function hideSnacks() {
-    document.getElementById("snacksIcon").style.display = "none";
+    var el4a = document.getElementById("snacksIcon");
+    fadeOut4(el4a);
 }
 
 function showFruits() {
-    document.getElementById("fruitsIcon").style.display = "block";
+    var el5 = document.getElementById("fruitsIcon");
+    fadeIn5(el5);
 }
 
 function hideFruits() {
-    document.getElementById("fruitsIcon").style.display = "none";
+    var el5a = document.getElementById("fruitsIcon");
+    fadeOut5(el5a);
 }
 
 function showSeafood() {
-    document.getElementById("seafoodIcon").style.display = "block";
+    var el6 = document.getElementById("seafoodIcon");
+    fadeIn6(el6);
 }
 
 function hideSeafood() {
-    document.getElementById("seafoodIcon").style.display = "none";
+    var el6a = document.getElementById("seafoodIcon");
+    fadeOut6(el6a);
 }
 
 function showCommodities() {
-    document.getElementById("commoditiesIcon").style.display = "block";
+    var el7 = document.getElementById("commoditiesIcon");
+    fadeIn7(el7);
 }
 
 function hideCommodities() {
-    document.getElementById("commoditiesIcon").style.display = "none";
+    var el7a = document.getElementById("commoditiesIcon");
+    fadeOut7(el7a);
 }
 
 function showPromos() {
-    document.getElementById("promotionsIcon").style.display = "block";
+    var el8 = document.getElementById("promotionsIcon");
+    fadeIn8(el8);
 }
 
 function hidePromos() {
-    document.getElementById("promotionsIcon").style.display = "none";
+    var el8a = document.getElementById("promotionsIcon");
+    fadeOut8(el8a);
+}
+
+function fadeIn(el) {
+  var tick = function() {
+    el.style.opacity = +el.style.opacity + 0.05;
+
+    if (+el.style.opacity < 1) {
+      setTimeout(function(){ fadeIn(el); }, 3);
+    }
+  };
+
+  tick();
+}
+
+function fadeOut(ela) {
+var tick2 = function() {
+    ela.style.opacity = +ela.style.opacity - 0.05;
+
+    if (+ela.style.opacity > 0) {
+      setTimeout(function(){ fadeOut(ela); }, 3);
+    }
+  };
+
+  tick2();
+}
+
+function fadeIn2(el2) {
+  var tick = function() {
+    el2.style.opacity = +el2.style.opacity + 0.05;
+
+    if (+el2.style.opacity < 1) {
+      setTimeout(function(){ fadeIn(el2); }, 3);
+    }
+  };
+
+  tick();
+}
+
+function fadeOut2(el2a) {
+var tick2 = function() {
+    el2a.style.opacity = +el2a.style.opacity - 0.05;
+
+    if (+el2a.style.opacity > 0) {
+      setTimeout(function(){ fadeOut(el2a); }, 3);
+    }
+  };
+
+  tick2();
+}
+
+function fadeIn3(el3) {
+  var tick = function() {
+    el3.style.opacity = +el3.style.opacity + 0.05;
+
+    if (+el3.style.opacity < 1) {
+      setTimeout(function(){ fadeIn(el3); }, 3);
+    }
+  };
+
+  tick();
+}
+
+function fadeOut3(el3a) {
+var tick2 = function() {
+    el3a.style.opacity = +el3a.style.opacity - 0.05;
+
+    if (+el3a.style.opacity > 0) {
+      setTimeout(function(){ fadeOut(el3a); }, 3);
+    }
+  };
+
+  tick2();
+}
+
+function fadeIn4(el4) {
+  var tick = function() {
+    el4.style.opacity = +el4.style.opacity + 0.05;
+
+    if (+el4.style.opacity < 1) {
+      setTimeout(function(){ fadeIn(el4); }, 3);
+    }
+  };
+
+  tick();
+}
+
+function fadeOut4(el4a) {
+var tick2 = function() {
+    el4a.style.opacity = +el4a.style.opacity - 0.05;
+
+    if (+el4a.style.opacity > 0) {
+      setTimeout(function(){ fadeOut(el4a); }, 3);
+    }
+  };
+
+  tick2();
+}
+
+function fadeIn5(el5) {
+  var tick = function() {
+    el5.style.opacity = +el5.style.opacity + 0.05;
+
+    if (+el5.style.opacity < 1) {
+      setTimeout(function(){ fadeIn(el5); }, 3);
+    }
+  };
+
+  tick();
+}
+
+function fadeOut5(el5a) {
+var tick2 = function() {
+    el5a.style.opacity = +el5a.style.opacity - 0.05;
+
+    if (+el5a.style.opacity > 0) {
+      setTimeout(function(){ fadeOut(el5a); }, 3);
+    }
+  };
+
+  tick2();
+}
+
+function fadeIn6(el6) {
+  var tick = function() {
+    el6.style.opacity = +el6.style.opacity + 0.05;
+
+    if (+el6.style.opacity < 1) {
+      setTimeout(function(){ fadeIn(el6); }, 3);
+    }
+  };
+
+  tick();
+}
+
+function fadeOut6(el6a) {
+var tick2 = function() {
+    el6a.style.opacity = +el6a.style.opacity - 0.05;
+
+    if (+el6a.style.opacity > 0) {
+      setTimeout(function(){ fadeOut(el6a); }, 3);
+    }
+  };
+
+  tick2();
+}
+
+function fadeIn7(el7) {
+  var tick = function() {
+    el7.style.opacity = +el7.style.opacity + 0.05;
+
+    if (+el7.style.opacity < 1) {
+      setTimeout(function(){ fadeIn(el7); }, 3);
+    }
+  };
+
+  tick();
+}
+
+function fadeOut7(el7a) {
+var tick2 = function() {
+    el7a.style.opacity = +el7a.style.opacity - 0.05;
+
+    if (+el7a.style.opacity > 0) {
+      setTimeout(function(){ fadeOut(el7a); }, 3);
+    }
+  };
+
+  tick2();
+}
+
+function fadeIn8(el8) {
+  var tick = function() {
+    el8.style.opacity = +el8.style.opacity + 0.05;
+
+    if (+el8.style.opacity < 1) {
+      setTimeout(function(){ fadeIn(el8); }, 3);
+    }
+  };
+
+  tick();
+}
+
+function fadeOut8(el8a) {
+var tick2 = function() {
+    el8a.style.opacity = +el8a.style.opacity - 0.05;
+
+    if (+el8a.style.opacity > 0) {
+      setTimeout(function(){ fadeOut(el8a); }, 3);
+    }
+  };
+
+  tick2();
 }
