@@ -1,4 +1,7 @@
 <?php
+ini_set("SMTP","ssl://smtp.gmail.com");
+ini_set("smtp_port","465");
+
 if(isset($_POST['submit'])) {
  
     // EDIT THE 2 LINES BELOW AS REQUIRED
