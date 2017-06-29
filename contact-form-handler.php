@@ -1,22 +1,45 @@
 <?php
-$mail = new PHPMailer(); // create a new object
-$mail->IsSMTP(); // enable SMTP
-$mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
-$mail->SMTPAuth = true; // authentication enabled
-$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
-$mail->Host = "smtp.gmail.com";
-$mail->Port = 465; // or 587
-$mail->IsHTML(true);
-$mail->Username = "bennybwkrap@gmail.com";
-$mail->Password = "170496Bbwk";
-$mail->SetFrom("bennybwkrap@gmail.com");
-$mail->Subject = "Test";
-$mail->Body = "hello";
-$mail->AddAddress("bennybwkrap@gmail.com");
-
- if(!$mail->Send()) {
-    echo "Mailer Error: " . $mail->ErrorInfo;
- } else {
-    echo "Message has been sent";
- }
+if(isset($_POST['submit'])) {
+ 
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+    $email_to = "bennybwkrap@gmail.com";
+    $email_subject = "Your email subject line";
+ 
+    function died($error) {
+        // your error code can go here
+        echo "We are very sorry, but there were error(s) found with the form you submitted. ";
+        echo "These errors appear below.<br /><br />";
+        echo $error."<br /><br />";
+        echo "Please go back and fix these errors.<br /><br />";
+        die();
+    }
+ 
+ 
+    $error_message = "";
+ 
+    $email_message = "Form details below.\n\n";
+     
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+ 
+     
+ 
+    $email_message .= "First Line\nSecond Line\nThird Line";
+ 
+// create email headers
+$headers = 'From: '.$email_to."\r\n".
+'Reply-To: '.$email_to."\r\n" .
+'X-Mailer: PHP/' . phpversion();
+@mail($email_to, $email_subject, $email_message, $headers);  
+?>
+ 
+<!-- include your own success html here -->
+ 
+Thank you for contacting us. We will be in touch with you very soon.
+ 
+<?php
+    header("index.html");
+}
 ?>
